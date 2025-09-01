@@ -1,5 +1,5 @@
 {% set name = "streamtracer" %}
-{% set version = "2.4.1" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/streamtracer-{{ version }}.tar.gz
-  sha256: 49e4d60b44c74455fb28a97e4cc2ab9c2b4038327ffb1eaf856b79de7c448ca8
+  sha256: a521e191ae3bb1018d99ce5834a5b25b4c6287ce4382e6fa8442551a1b4d6cfe
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
